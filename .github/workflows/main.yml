@@ -1,6 +1,0 @@
-name: Python CICD
-
-on:
-  push:
-    branches: [ master ]
-  pull_request:
