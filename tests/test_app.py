@@ -62,7 +62,7 @@ def test_square_root():
     assert square_root(25) != 6
 
 def test_square_root():
-    assert square_root(-25) == None
+    assert square_root(-25) == "invalid"
 
 def test_square_root():
     assert square_root(-25) != 5
@@ -74,7 +74,7 @@ def test_percentage():
     assert percentage(3, 4) != 55
 
 def test_percentage():
-    assert percentage(-3, 4) == None
+    assert percentage(-3, 4) == "invalid"
 
 def test_percentage():
     assert percentage(-3, 4) != 75

@@ -25,13 +25,15 @@ def cos (a):
     return math.cos(a)
 
 def square_root (a):
-    if a / abs(a) == -1:
+    if (a / abs(a)) == -1:
         print("Cannot take the square root of a negative number.")
-        return None
-    return math.sqrt(a)
+        return "invalid"
+    else:
+        return math.sqrt(a)
 
 def percentage (a, b):
-    if a / abs(a) == -1:
-        print("Cannot have a negative percentage.")
-        return None
-    return (a / b ) * 100
+    if ((a / abs(a)) == -1) or (b == 0):
+        print("Cannot have a negative percentage or divide by zero.")
+        return "invalid"
+    else:
+        return ((a / b ) * 100)
