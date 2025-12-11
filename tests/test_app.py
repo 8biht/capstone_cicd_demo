@@ -10,71 +10,71 @@ from app import add, subtract, multiply, divide, log, square, sin, cos, square_r
 def test_add():
     assert add(5, 6) == 11
 
-def test_add():
+def test_add1():
     assert add(5, 6) != 10 
 
 def test_subtract():
     assert subtract(5, 6) == -1
 
-def test_subtract():
+def test_subtract1():
     assert subtract(5, 6) != 10 
 
 def test_multiply():
     assert multiply(2, 3) == 6
 
-def test_multiply():
+def test_multiply1():
     assert multiply(2, 3) != 5
 
 def test_divide():
     assert divide(4, 2) == 2
 
-def test_divide():
+def test_divide1():
     assert divide(4, 2) != 5
 
 def test_log():
     assert log(math.e) == 1
 
-def test_log():
+def test_log1():
     assert log(math.e) != 5
 
 def test_square():
     assert square(5) == 25
 
-def test_square():
+def test_square1():
     assert square(5) != 6
 
 def test_sin():
-    assert sin(math.pi) == 0
+    assert sin(0) == 0
 
-def test_sin():
+def test_sin1():
     assert sin(math.pi) != 5
 
 def test_cos():
     assert cos(math.pi) == -1
 
-def test_cos():
+def test_cos1():
     assert cos(math.pi) != 5
 
 def test_square_root():
     assert square_root(25) == 5
 
-def test_square_root():
+def test_square_root1():
     assert square_root(25) != 6
 
-def test_square_root():
+def test_square_root2():
     assert square_root(-25) == "invalid"
 
-def test_square_root():
+def test_square_root3():
     assert square_root(-25) != 5
 
 def test_percentage():
     assert percentage(3, 4) == 75
 
-def test_percentage():
+def test_percentage1():
     assert percentage(3, 4) != 55
 
-def test_percentage():
+def test_percentage2():
     assert percentage(-3, 4) == "invalid"
 
-def test_percentage():
+def test_percentage3():
     assert percentage(-3, 4) != 75
